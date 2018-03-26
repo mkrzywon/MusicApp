@@ -52,6 +52,9 @@ http://www.tutorialspoint.com/android/android_mediaplayer.htm
 https://www.c-sharpcorner.com/UploadFile/9e8439/create-custom-listener-on-button-in-listitem-listview-in-a/
 
 https://en.wikipedia.org/wiki/Green_Day
+
 https://en.wikipedia.org/wiki/Elvis_Presley
+
 https://en.wikipedia.org/wiki/The_Rolling_Stones
+
 https://en.wikipedia.org/wiki/The_Beatles
