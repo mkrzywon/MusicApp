@@ -1,9 +1,9 @@
 # MusicApp
 
 <p align="middle">
-  <img src="../master/app/src/main/res/raw/category.jpg" width="300" />
-  <img src="../master/app/src/main/res/raw/playlist.jpg" width="300" />
-  <img src="../master/app/src/main/res/raw/player.jpg" width="300" /> 
+  <img src="../master/app/src/main/res/raw/category.jpg" width="200" />
+  <img src="../master/app/src/main/res/raw/playlist.jpg" width="200" />
+  <img src="../master/app/src/main/res/raw/player.jpg" width="200" /> 
 </p>
 
 # Credits
