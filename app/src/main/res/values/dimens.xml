@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">100dp</dimen>
+    <dimen name="double_standard">32dp</dimen>
+    <dimen name="standard">16dp</dimen>
+    <dimen name="half">8dp</dimen>
+    <dimen name="quarter">4dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="bottom_padding_playlist">60dp</dimen>
+
+    <dimen name="category_head_text">32sp</dimen>
+    <dimen name="category_description">20sp</dimen>
+    <dimen name="enter_category">16sp</dimen>
+    <dimen name="player_head_text">32sp</dimen>
+    <dimen name="player_band_name">32sp</dimen>
+    <dimen name="player_song_title">24sp</dimen>
+    <dimen name="player_volume_control">24sp</dimen>
+</resources>

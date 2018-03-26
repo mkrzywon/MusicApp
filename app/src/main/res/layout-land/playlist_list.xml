@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_main"
+    style="@style/playlist_list_main_layout_landscape">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/song_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bottom_padding_playlist"
+        android:paddingEnd="@dimen/standard"
+        android:paddingStart="@dimen/standard"
+        android:paddingTop="@dimen/half"
+        android:stackFromBottom="true" />
+
+    <ImageButton
+        android:id="@+id/category_back_button"
+        style="@style/playlist_list_back_to_category_button"
+        android:layout_marginBottom="@dimen/standard"
+        android:contentDescription="@string/category_back_button"
+        android:src="@drawable/category_back_switch" />
+
+</RelativeLayout>

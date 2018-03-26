@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_main_layout">
+
+    <ImageView
+        android:id="@+id/sound_image"
+        style="@style/band_image"
+        android:layout_weight="0.1"
+        android:contentDescription="@string/playlist_image"
+        android:padding="@dimen/quarter"
+        android:src="@drawable/sound_image" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        style="@style/layout_author_title"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/author"
+            style="@style/author_text"
+            android:text="@string/library_beatles" />
+
+        <TextView
+            android:id="@+id/song_title"
+            style="@style/title_text"
+            android:text="@string/b22" />
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/playlist_play_icon"
+        android:layout_marginEnd="@dimen/standard"
+        android:layout_weight="0.1"
+        android:contentDescription="@string/play_icon"
+        android:src="@drawable/ic_play_arrow" />
+
+</LinearLayout>

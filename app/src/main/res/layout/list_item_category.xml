@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/main_layout_portrait">
+
+    <TextView
+        android:id="@+id/head_text"
+        style="@style/head_text_portrait"
+        android:layout_marginTop="@dimen/standard"
+        android:text="@string/category_beatles" />
+
+    <ImageView
+        android:id="@+id/category_image"
+        style="@style/category_image_portrait"
+        android:layout_marginEnd="@dimen/standard"
+        android:layout_marginStart="@dimen/standard"
+        android:layout_marginTop="@dimen/half"
+        android:contentDescription="@string/category_image"
+        android:src="@drawable/beatles" />
+
+    <TextView
+        android:id="@+id/category_description"
+        style="@style/category_description_portrait"
+        android:layout_marginEnd="@dimen/standard"
+        android:layout_marginStart="@dimen/standard"
+        android:layout_marginTop="@dimen/half"
+        android:text="" />
+
+    <LinearLayout
+        style="@style/layout_playlist_button"
+        android:layout_marginBottom="@dimen/standard"
+        android:layout_marginTop="@dimen/double_standard">
+
+        <TextView
+            android:id="@+id/category_enter"
+            style="@style/category_enter_text"
+            android:layout_marginBottom="@dimen/quarter"
+            android:layout_marginTop="@dimen/quarter"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/playlist_button"
+            style="@style/category_playlist_button"
+            android:contentDescription="@string/playlist_button_desc" />
+
+    </LinearLayout>
+
+</LinearLayout>

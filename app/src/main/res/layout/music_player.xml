@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/player_main_layout_portrait"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/now_playing"
+        style="@style/now_playing_text"
+        android:layout_marginTop="@dimen/standard"
+        android:text="@string/now_playing" />
+
+    <ImageView
+        android:id="@+id/player_image"
+        style="@style/player_image_portrait"
+        android:layout_marginTop="@dimen/half"
+        android:layout_weight="1"
+        android:contentDescription="@string/player_image"
+        android:src="@drawable/sound_image" />
+
+    <TextView
+        android:id="@+id/player_author"
+        style="@style/player_author_text"
+        android:layout_marginTop="@dimen/half"
+        android:text="@string/library_beatles" />
+
+    <TextView
+        android:id="@+id/player_song_title"
+        style="@style/player_title_text"
+        android:text="@string/b22" />
+
+    <LinearLayout style="@style/layout_player_buttons">
+
+        <ImageButton
+            android:id="@+id/backward_button"
+            style="@style/player_button"
+            android:contentDescription="@string/backward_button"
+            android:src="@drawable/backward_button" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            style="@style/player_button"
+            android:contentDescription="@string/play_button"
+            android:src="@drawable/play_button" />
+
+        <ImageButton
+            android:id="@+id/pause_button"
+            style="@style/player_button"
+            android:contentDescription="@string/pause_button"
+            android:src="@drawable/pause_button" />
+
+        <ImageButton
+            android:id="@+id/stop_button"
+            style="@style/player_button"
+            android:contentDescription="@string/stop_button"
+            android:src="@drawable/stop_button" />
+
+        <ImageButton
+            android:id="@+id/forward_button"
+            style="@style/player_button"
+            android:contentDescription="@string/forward_button"
+            android:src="@drawable/forward_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_volume_control_portrait"
+        android:layout_marginBottom="@dimen/half"
+        android:layout_marginEnd="@dimen/standard"
+        android:layout_marginStart="@dimen/standard"
+        android:layout_marginTop="@dimen/half">
+
+        <TextView
+            android:id="@+id/volume_control"
+            style="@style/volume_control_text_portrait"
+            android:layout_marginBottom="@dimen/half"
+            android:text="@string/volume_control" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/back_to_fragment_button"
+        style="@style/back_to_playlist_button"
+        android:layout_marginBottom="@dimen/standard"
+        android:contentDescription="@string/playlist_back_button"
+        android:src="@drawable/category_back_switch" />
+
+</LinearLayout>

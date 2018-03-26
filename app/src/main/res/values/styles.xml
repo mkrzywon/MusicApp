@@ -1,0 +1,331 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- App bar style -->
+    <style name="Widget.AppCompat.Light.ActionBar.TabView.Inverse." parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- Remove the shadow below the app bar -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
+    </style>
+
+    <!-- Styles for activity_main files -->
+    <style name="activity_main_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background_portrait</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="activity_main_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background_landscape</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Styles for list_item_category files -->
+    <style name="main_layout_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="main_layout_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_playlist_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_description_landscape">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="head_text_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:fontFamily">@font/hang_the_dj</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/category_head_text</item>
+    </style>
+
+    <style name="head_text_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:fontFamily">@font/hang_the_dj</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/category_head_text</item>
+    </style>
+
+    <style name="category_image_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:foreground">@drawable/rounded_fg</item>
+    </style>
+
+    <style name="category_image_landscape">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:foreground">@drawable/rounded_fg</item>
+    </style>
+
+    <style name="category_description_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/category_description</item>
+    </style>
+
+    <style name="category_description_landscape">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/category_description</item>
+    </style>
+
+    <style name="category_enter_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/enter_category</item>
+    </style>
+
+    <style name="category_playlist_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Styles for list_item_playlist files -->
+    <style name="list_item_main_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:background">@drawable/rounded_shape_playlist</item>
+        <item name="android:foreground">@drawable/rounded_fg</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layout_author_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="band_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="author_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:fontFamily">@font/raggedways_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="playlist_play_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Styles for music_player files -->
+    <style name="player_main_layout_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/player_background</item>
+    </style>
+
+    <style name="player_main_layout_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/player_background_landscape</item>
+    </style>
+
+    <style name="layout_player_buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layout_volume_control_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_volume_control_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_shape_player</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layout_author_title_volume_container_landscape">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="player_layout_author_title_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/rounded_shape_player</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="now_playing_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/player_head_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="player_image_portrait">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+    </style>
+
+    <style name="player_image_landscape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/rounded_shape</item>
+    </style>
+
+    <style name="player_author_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/player_band_name</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="player_title_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raggedways_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/player_song_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="player_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="volume_control_text_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/player_volume_control</item>
+    </style>
+
+    <style name="volume_control_text_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/boogaloo_regular</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/player_volume_control</item>
+    </style>
+
+    <style name="back_to_playlist_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Styles for playlist_list files -->
+    <style name="playlist_list_main_layout_portrait">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background_portrait</item>
+    </style>
+
+    <style name="playlist_list_main_layout_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background_landscape</item>
+    </style>
+
+    <style name="playlist_list_back_to_category_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>
