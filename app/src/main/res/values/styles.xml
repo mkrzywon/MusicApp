@@ -16,14 +16,14 @@
 
     <!-- Style for a tab that displays a category name -->
     <style name="CategoryTab" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">@android:color/white</item>
-        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
     </style>
 
     <!-- Text appearance style for a category tab -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">#A8A19E</item>
+        <item name="android:textColor">@color/category_tab_text_appearance</item>
     </style>
 
     <!-- Styles for activity_main files -->
@@ -73,7 +73,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/rounded_shape</item>
         <item name="android:fontFamily">@font/hang_the_dj</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/category_head_text</item>
     </style>
 
@@ -83,7 +83,7 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:background">@drawable/rounded_shape</item>
         <item name="android:fontFamily">@font/hang_the_dj</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/category_head_text</item>
     </style>
 
@@ -109,7 +109,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
         <item name="android:background">@drawable/rounded_shape</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/category_description</item>
     </style>
 
@@ -119,7 +119,7 @@
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
         <item name="android:background">@drawable/rounded_shape</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/category_description</item>
     </style>
 
@@ -127,14 +127,14 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/enter_category</item>
     </style>
 
     <style name="category_playlist_button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@color/transparent</item>
     </style>
 
     <!-- Styles for list_item_playlist files -->
@@ -165,7 +165,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -174,7 +174,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:fontFamily">@font/raggedways_regular</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="playlist_play_icon">
@@ -236,7 +236,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/player_head_text</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -261,7 +261,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/player_band_name</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -271,7 +271,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/raggedways_regular</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/player_song_title</item>
         <item name="android:textStyle">bold</item>
     </style>
@@ -279,7 +279,7 @@
     <style name="player_button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@color/transparent</item>
     </style>
 
     <style name="volume_control_text_portrait">
@@ -287,7 +287,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/player_volume_control</item>
     </style>
 
@@ -296,7 +296,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/boogaloo_regular</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/player_volume_control</item>
     </style>
 
@@ -304,7 +304,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">bottom|center_horizontal</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@color/transparent</item>
     </style>
 
     <!-- Styles for playlist_list files -->
@@ -325,7 +325,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:background">@android:color/transparent</item>
+        <item name="android:background">@color/transparent</item>
     </style>
-
 </resources>

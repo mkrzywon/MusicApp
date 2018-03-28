@@ -23,6 +23,11 @@ public class PlaylistElvisFragment extends Fragment {
 
     @BindView(R.id.category_back_button) ImageButton categoryBackButton;
 
+    public static final String KEY_IMAGE = "image";
+    public static final String KEY_AUTHOR = "author";
+    public static final String KEY_TITLE = "title";
+    public static final String KEY_SOUND = "sound";
+
     public PlaylistElvisFragment() {
         // Required empty public constructor
     }
@@ -95,10 +100,10 @@ public class PlaylistElvisFragment extends Fragment {
 
                 Intent intent = new Intent(getActivity().getBaseContext(), PlayerActivity.class);
 
-                intent.putExtra(getString(R.string.image), mplaylistImageId);
-                intent.putExtra(getString(R.string.author), mAuthorId);
-                intent.putExtra(getString(R.string.title), mTilteId);
-                intent.putExtra(getString(R.string.sound), mAudioResourceId);
+                intent.putExtra(KEY_IMAGE, mplaylistImageId);
+                intent.putExtra(KEY_AUTHOR, mAuthorId);
+                intent.putExtra(KEY_TITLE, mTilteId);
+                intent.putExtra(KEY_SOUND, mAudioResourceId);
                 getActivity().startActivity(intent);
 
             }

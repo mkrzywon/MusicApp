@@ -18,6 +18,11 @@ import butterknife.ButterKnife;
 
 public class PlayerActivity extends AppCompatActivity {
 
+    private static final String KEY_IMAGE = "image";
+    private static final String KEY_AUTHOR = "author";
+    private static final String KEY_TITLE = "title";
+    private static final String KEY_SOUND = "sound";
+
     private MediaPlayer mMediaPlayer;
     private AudioManager mAudioManager;
 
@@ -95,10 +100,10 @@ public class PlayerActivity extends AppCompatActivity {
         Bundle bundle = intent.getExtras();
 
         if (bundle != null) {
-            int mplaylistImageId = bundle.getInt(getString(R.string.image));
-            int mAuthorId = bundle.getInt(getString(R.string.author));
-            int mTilteId = bundle.getInt(getString(R.string.title));
-            int mAudioResourceId = bundle.getInt(getString(R.string.sound));
+            int mplaylistImageId = bundle.getInt(KEY_IMAGE);
+            int mAuthorId = bundle.getInt(KEY_AUTHOR);
+            int mTilteId = bundle.getInt(KEY_TITLE);
+            int mAudioResourceId = bundle.getInt(KEY_SOUND);
 
             initialisation();
             animations();
