@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * {@link PlaylistAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link PlaylistList} objects.
  */
-public class PlaylistAdapter extends ArrayAdapter<PlaylistList> {
+class PlaylistAdapter extends ArrayAdapter<PlaylistList> {
 
     /**
      * Create a new {@link PlaylistAdapter} object.

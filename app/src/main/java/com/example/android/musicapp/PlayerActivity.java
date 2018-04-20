@@ -56,19 +56,22 @@ public class PlayerActivity extends AppCompatActivity {
     private final AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
-            if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
-                    focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
 
-                mMediaPlayer.pause();
-                mMediaPlayer.seekTo(0);
+            switch (focusChange) {
 
-            } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
-
-                mMediaPlayer.start();
-
-            } else if (focusChange == AudioManager.AUDIOFOCUS_LOSS) {
-
-                releaseMediaPlayer();
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
+                    mMediaPlayer.pause();
+                    mMediaPlayer.seekTo(0);
+                    break;
+                case AudioManager.AUDIOFOCUS_GAIN:
+                    mMediaPlayer.start();
+                    break;
+                case AudioManager.AUDIOFOCUS_LOSS:
+                    releaseMediaPlayer();
+                    break;
+                default:
+                    break;
             }
         }
     };

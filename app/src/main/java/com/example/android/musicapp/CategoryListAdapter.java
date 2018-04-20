@@ -23,7 +23,7 @@ class CategoryListAdapter extends ArrayAdapter<CategoryList> {
     private CustomButtonListener customListner;
 
     public interface CustomButtonListener {
-        public void onButtonClickListner();
+        void onButtonClickListner();
     }
 
     public void setCustomButtonListner(CustomButtonListener listener) {

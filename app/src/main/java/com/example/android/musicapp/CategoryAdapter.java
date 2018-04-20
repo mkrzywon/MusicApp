@@ -31,14 +31,20 @@ class CategoryAdapter extends FragmentPagerAdapter {
      */
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new CategoryBeatlesFragment();
-        } else if (position == 1) {
-            return new CategoryStonesFragment();
-        } else if (position == 2) {
-            return new CategoryElvisFragment();
-        } else {
-            return new CategoryGreendayFragment();
+
+        switch (position) {
+
+            case 0:
+                return new CategoryBeatlesFragment();
+            case 1:
+                return new CategoryStonesFragment();
+            case 2:
+                return new CategoryElvisFragment();
+            case 3:
+                return new CategoryGreendayFragment();
+            default:
+                return null;
+
         }
     }
 
@@ -52,14 +58,20 @@ class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position == 0) {
-            return mContext.getString(R.string.category_beatles);
-        } else if (position == 1) {
-            return mContext.getString(R.string.category_stones);
-        } else if (position == 2) {
-            return mContext.getString(R.string.category_elvis);
-        } else {
-            return mContext.getString(R.string.category_greenday);
+
+        switch (position) {
+
+            case 0:
+                return mContext.getString(R.string.category_beatles);
+            case 1:
+                return mContext.getString(R.string.category_stones);
+            case 2:
+                return mContext.getString(R.string.category_elvis);
+            case 3:
+                return mContext.getString(R.string.category_greenday);
+            default:
+                return null;
+
         }
     }
 }
