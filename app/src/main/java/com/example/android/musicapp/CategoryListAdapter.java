@@ -53,31 +53,35 @@ class CategoryListAdapter extends ArrayAdapter<CategoryList> {
         // Get the {@link CategoryList} object located at this position in the list
         CategoryList currentCategoryList = getItem(position);
 
-        TextView headText = listItemView.findViewById(R.id.head_text);
-        headText.setText(currentCategoryList.getHeadTextId());
+        if (currentCategoryList != null) {
 
-        ImageView imageView = listItemView.findViewById(R.id.category_image);
-        imageView.setImageResource(currentCategoryList.getCategoryImageId());
+            TextView headText = listItemView.findViewById(R.id.head_text);
+            headText.setText(currentCategoryList.getHeadTextId());
 
-        TextView categoryDescription = listItemView.findViewById(R.id.category_description);
-        categoryDescription.setText(currentCategoryList.getCategoryDescriptionId());
+            ImageView imageView = listItemView.findViewById(R.id.category_image);
+            imageView.setImageResource(currentCategoryList.getCategoryImageId());
 
-        TextView categoryEnter = listItemView.findViewById(R.id.category_enter);
-        categoryEnter.setText(currentCategoryList.getmCategoryEnter());
+            TextView categoryDescription = listItemView.findViewById(R.id.category_description);
+            categoryDescription.setText(currentCategoryList.getCategoryDescriptionId());
 
-        ImageButton categorySwitch = listItemView.findViewById(R.id.playlist_button);
-        categorySwitch.setImageResource(currentCategoryList.getmCategoryButton());
+            TextView categoryEnter = listItemView.findViewById(R.id.category_enter);
+            categoryEnter.setText(currentCategoryList.getmCategoryEnter());
 
-        //Listener for the playlist button
-        categorySwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+            ImageButton categorySwitch = listItemView.findViewById(R.id.playlist_button);
+            categorySwitch.setImageResource(currentCategoryList.getmCategoryButton());
 
-                if (customListner != null) {
-                    customListner.onButtonClickListner();
+            //Listener for the playlist button
+            categorySwitch.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if (customListner != null) {
+                        customListner.onButtonClickListner();
+                    }
                 }
-            }
-        });
+            });
+
+        }
 
         return listItemView;
 

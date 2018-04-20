@@ -42,16 +42,20 @@ class PlaylistAdapter extends ArrayAdapter<PlaylistList> {
         // Get the {@link PlaylistList} object located at this position in the list
         PlaylistList currentPlaylist = getItem(position);
 
-        ImageView soundImage = listItemView.findViewById(R.id.sound_image);
-        soundImage.setImageResource(currentPlaylist.getmplaylistimageid());
+        if (currentPlaylist != null) {
 
-        TextView author = listItemView.findViewById(R.id.author);
-        author.setText(currentPlaylist.getmAuthorId());
+            ImageView soundImage = listItemView.findViewById(R.id.sound_image);
+            soundImage.setImageResource(currentPlaylist.getmplaylistimageid());
 
-        TextView songTitle = listItemView.findViewById(R.id.song_title);
-        songTitle.setText(currentPlaylist.getmTilteId());
+            TextView author = listItemView.findViewById(R.id.author);
+            author.setText(currentPlaylist.getmAuthorId());
 
-        return listItemView;
+            TextView songTitle = listItemView.findViewById(R.id.song_title);
+            songTitle.setText(currentPlaylist.getmTilteId());
+
+        }
+
+            return listItemView;
 
     }
 }
