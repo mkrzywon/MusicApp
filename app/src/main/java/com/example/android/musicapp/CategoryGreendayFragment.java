@@ -3,6 +3,7 @@ package com.example.android.musicapp;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,11 +15,11 @@ import java.util.ArrayList;
 /**
  * {@link Fragment} that displays a list of components for Green Day category.
  */
-public class CategoryGreendayFragment extends Fragment implements CategoryListAdapter.customButtonListener {
+public class CategoryGreendayFragment extends Fragment implements CategoryListAdapter.CustomButtonListener {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.category_list, container, false);
 
         // Create a list of categories
@@ -46,13 +47,13 @@ public class CategoryGreendayFragment extends Fragment implements CategoryListAd
     }
 
     // This method replace the current fragment with the new one
-    public void changeFragment(Fragment fr) {
+    private void changeFragment(Fragment fr) {
         getChildFragmentManager().beginTransaction().replace(R.id.main, fr).addToBackStack(null).commit();
     }
 
     // Custom onClickListener from CategoryListAdapter
     @Override
-    public void onButtonClickListner(int position) {
+    public void onButtonClickListner() {
 
         changeFragment(new PlaylistGreendayFragment());
         //Play sound while pressing the button

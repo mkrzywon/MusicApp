@@ -17,16 +17,16 @@ import java.util.ArrayList;
  * {@link CategoryListAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link CategoryList} objects.
  */
-public class CategoryListAdapter extends ArrayAdapter<CategoryList> {
+class CategoryListAdapter extends ArrayAdapter<CategoryList> {
 
     // Setting the customButtonListener interface to pass the onClick method into category fragments
-    private customButtonListener customListner;
+    private CustomButtonListener customListner;
 
-    public interface customButtonListener {
-        public void onButtonClickListner(int position);
+    public interface CustomButtonListener {
+        public void onButtonClickListner();
     }
 
-    public void setCustomButtonListner(customButtonListener listener) {
+    public void setCustomButtonListner(CustomButtonListener listener) {
         this.customListner = listener;
     }
 
@@ -36,7 +36,7 @@ public class CategoryListAdapter extends ArrayAdapter<CategoryList> {
      * @param context    is the current context (i.e. Activity) that the adapter is being created in.
      * @param categories is the list of {@link CategoryList}s to be displayed.
      */
-    public CategoryListAdapter(Context context, ArrayList<CategoryList> categories) {
+    CategoryListAdapter(Context context, ArrayList<CategoryList> categories) {
         super(context, 0, categories);
     }
 
@@ -74,7 +74,7 @@ public class CategoryListAdapter extends ArrayAdapter<CategoryList> {
             public void onClick(View view) {
 
                 if (customListner != null) {
-                    customListner.onButtonClickListner(position);
+                    customListner.onButtonClickListner();
                 }
             }
         });

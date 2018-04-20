@@ -24,7 +24,7 @@ public class PlaylistAdapter extends ArrayAdapter<PlaylistList> {
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param categories is the list of {@link PlaylistList}s to be displayed.
      */
-    public PlaylistAdapter(Context context, ArrayList<PlaylistList> categories) {
+    PlaylistAdapter(Context context, ArrayList<PlaylistList> categories) {
         super(context, 0, categories);
 
     }

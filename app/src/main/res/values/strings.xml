@@ -17,10 +17,6 @@
     <string name="volume_control">Volume control</string>
     <string name="category_enter">Enter the category</string>
 
-    <string name="image">image</string>
-    <string name="author">author</string>
-    <string name="title">title</string>
-    <string name="sound">sound</string>
     <string name="alpha">Alpha</string>
     <string name="scalex">ScaleX</string>
     <string name="jumped_forward">You have jumped forward 5 seconds</string>
@@ -29,9 +25,6 @@
     <string name="no_jump_backward">You can\'t jump backward 5 seconds"</string>
 
     <string name="library_beatles">The Beatles</string>
-    <string name="library_stones">Rolling Stones</string>
-    <string name="library_elvis">Elvis Presley</string>
-    <string name="library_greenday">Green Day</string>
 
     <string name="category_beatles">The Beatles</string>
     <string name="category_stones">Rolling Stones</string>

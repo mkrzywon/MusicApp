@@ -26,8 +26,8 @@ public class PlayerActivity extends AppCompatActivity {
     private MediaPlayer mMediaPlayer;
     private AudioManager mAudioManager;
 
-    private int forwardTime = 5000;
-    private int backwardTime = 5000;
+    private final int forwardTime = 5000;
+    private final int backwardTime = 5000;
     private int audioResource;
 
     private double startTime = 0;
@@ -53,7 +53,7 @@ public class PlayerActivity extends AppCompatActivity {
      * This listener gets triggered whenever the audio focus changes
      * (i.e., we gain or lose audio focus because of another app or device).
      */
-    private AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+    private final AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
             if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
@@ -77,7 +77,7 @@ public class PlayerActivity extends AppCompatActivity {
      * This listener gets triggered when the {@link MediaPlayer} has completed
      * playing the audio file.
      */
-    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
+    private final MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
             // Now that the sound file has finished playing, release the media player resources.
@@ -118,7 +118,7 @@ public class PlayerActivity extends AppCompatActivity {
         }
     }
 
-    public void initialisation() {
+    private void initialisation() {
 
         playButton.setSelected(false);
         pauseButton.setSelected(false);
@@ -141,7 +141,7 @@ public class PlayerActivity extends AppCompatActivity {
 
     }
 
-    public void buttons() {
+    private void buttons() {
 
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override

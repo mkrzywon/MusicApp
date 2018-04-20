@@ -6,16 +6,16 @@ import android.os.Parcelable;
 public class PlaylistList implements Parcelable{
 
     /** Image resource ID for the playlist */
-    private int mplaylistImageId;
+    private final int mplaylistImageId;
 
     /** String resource ID for the author text of playlist */
-    private int mAuthorId;
+    private final int mAuthorId;
 
     /** String resource ID for the title text of playlist */
-    private int mTilteId;
+    private final int mTilteId;
 
     /** Audio resource ID for the playlist */
-    private int mAudioResourceId;
+    private final int mAudioResourceId;
 
     /**
      * Create a new PlaylistList object.
@@ -72,7 +72,7 @@ public class PlaylistList implements Parcelable{
     }
 
     //read and set saved values from parcel
-    public PlaylistList(Parcel parcel){
+    private PlaylistList(Parcel parcel){
 
         mplaylistImageId = parcel.readInt();
         mAuthorId = parcel.readInt();
